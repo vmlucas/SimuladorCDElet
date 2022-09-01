@@ -1,0 +1,322 @@
+<!-- maps links used in documentation to real locations.
+ 
+     This file is different depending on where the documentation has
+     been deployed, i.e. a local resin deployment, a local resin-ee
+     deployment,  or the caucho website
+     -->
+
+<href-map>
+
+  <root id="external">
+    <!-- an external link. The topic is either an explicit website, or
+    a keyword defined in a map (below)
+    -->
+    <prefix>http://</prefix>
+    
+    <mappings>
+      <map topic="caucho">
+        <defaultext>.xtp</defaultext>
+
+        <reconsider>
+          <withtopic>www.caucho.com</withtopic>
+        </reconsider>
+        <href id="burlap">
+          <reconsider>
+            <withhref>burlap</withhref>
+          </reconsider>
+        </href>
+        <href id="burlap/spec">
+          <reconsider>
+            <withhref>burlap/burlap-draft-spec.xtp</withhref>
+          </reconsider>
+        </href>
+        <href id="hessian">
+          <reconsider>
+            <withhref>hessian</withhref>
+          </reconsider>
+        </href>
+        <href id="hessian/spec">
+          <reconsider>
+            <withhref>hessian/hessian-draft-spec.xtp</withhref>
+          </reconsider>
+        </href>
+      </map>
+
+      <map topic="www.caucho.com">
+        <defaultext>.xtp</defaultext>
+      </map>
+
+      <map topic="spec">
+        <!-- w3c specs -->
+        <href id="xslt10">
+          <reconsider>
+            <withtopic>www.w3c.org</withtopic>
+            <withhref>TR/1999/REC-xslt-19991116</withhref>
+          </reconsider>
+        </href>
+        <href id="xpath10">
+          <reconsider>
+            <withtopic>www.w3c.org</withtopic>
+            <withhref>TR/1999/REC-xpath-19991116</withhref>
+          </reconsider>
+        </href>
+        <href id="http">
+          <reconsider>
+            <withtopic>www.w3c.org</withtopic>
+            <withhref>Protocols/rfc2616/rfc2616.html</withhref>
+          </reconsider>
+        </href>
+        <href id="http/Expires">
+          <reconsider>
+            <withtopic>www.w3c.org</withtopic>
+            <withhref>Protocols/rfc2616/rfc2616-sec14.html#sec14.21</withhref>
+          </reconsider>
+        </href>
+      </map>
+
+      <map topic="apache">
+        <href id="dso">
+          <reconsider>
+            <withtopic>httpd.apache.org</withtopic>
+            <withhref>docs/dso.html</withhref>
+          </reconsider>
+        </href>
+      </map>
+
+      <map topic="sun">
+        <reconsider>
+          <withtopic>java.sun.com</withtopic>
+        </reconsider>
+        <href id="security">
+          <reconsider>
+            <withhref>j2se/1.4/docs/guide/security/index.html</withhref>
+          </reconsider>
+        </href>
+        <href id="security/permissions">
+          <reconsider>
+            <withhref>j2se/1.4/docs/guide/security/permissions.html</withhref>
+          </reconsider>
+        </href>
+        <href id="security/policyfiles">
+          <reconsider>
+            <withhref>j2se/1.4/docs/guide/security/PolicyFiles.html</withhref>
+          </reconsider>
+        </href>
+
+        <href id="jsse">
+          <reconsider>
+            <withhref>products/jsse</withhref>
+          </reconsider>
+        </href>
+        <href id="jsse/install">
+          <reconsider>
+            <withhref>products/jsse/install.html</withhref>
+          </reconsider>
+        </href>
+      </map>
+
+      <map topic="openssl">
+        <reconsider>
+          <withtopic>www.openssl.org</withtopic>
+        </reconsider>
+        <href id="index">
+          <reconsider>
+            <withhref></withhref>
+          </reconsider>
+        </href>
+      </map>
+
+      <map topic="webdav">
+        <reconsider>
+          <withtopic>www.webdav.org</withtopic>
+        </reconsider>
+        <href id="index">
+          <reconsider>
+            <withhref></withhref>
+          </reconsider>
+        </href>
+      </map>
+      <map topic="webdav">
+        <reconsider>
+          <withtopic>www.webdav.org</withtopic>
+        </reconsider>
+        <href id="index">
+          <reconsider>
+            <withhref></withhref>
+          </reconsider>
+        </href>
+      </map>
+      <map topic="resinforeclipse">
+        <reconsider>
+          <withtopic>membres.lycos.fr</withtopic>
+        </reconsider>
+        <href id="index">
+          <reconsider>
+            <withhref>resinforeclipse</withhref>
+          </reconsider>
+        </href>
+      </map>
+
+      <map topic="scottit">
+        <reconsider>
+          <withtopic>www.ustobe.com/scottit</withtopic>
+        </reconsider>
+        <href id="index">
+          <reconsider>
+            <withhref>index.xtp</withhref>
+          </reconsider>
+        </href>
+
+      </map>
+           
+    </mappings>
+
+  </root>
+
+  <root id="download">
+    <prefix>http://</prefix>
+    <relpath>www.caucho.com</relpath>
+
+    <mappings>
+      <map topic="jbuilder">
+        <reconsider>
+          <withtopic>projects/jbuilder</withtopic>
+        </reconsider>
+        <href id="ver6">
+          <reconsider>
+            <withhref>resin-jbuilder-6.jar</withhref>
+          </reconsider>
+        </href>
+        <href id="ver7">
+          <reconsider>
+            <withhref>resin-jbuilder-7.jar</withhref>
+          </reconsider>
+        </href>
+      </map>
+    </mappings>
+  </root>
+
+  <root id="doc">
+    <prefix>find:doc</prefix>
+    <defaulthref>index</defaulthref>
+    <defaultext>.xtp</defaultext>
+
+    <mappings>
+      <map topic="faq">
+        <relpath>faq</relpath>
+      </map>
+
+      <map topic="install">
+        <relpath>install</relpath>
+      </map>
+
+      <map topic="config">
+        <relpath>config</relpath>
+      </map>
+
+      <map topic="db">
+        <relpath>db</relpath>
+      </map>
+
+      <map topic="webapp">
+        <relpath>webapp</relpath>
+      </map>
+
+      <map topic="jsp">
+        <relpath>jsp</relpath>
+      </map>
+
+      <map topic="servlets">
+        <relpath>servlets</relpath>
+      </map>
+
+      <map topic="cmp">
+        <relpath>cmp</relpath>
+      </map>
+
+      <map topic="ejb">
+        <relpath>ejb</relpath>
+      </map>
+
+      <map topic="ejbm">
+        <relpath>ejbm</relpath>
+      </map>
+
+      <map topic="ejbc">
+        <relpath>ejbc</relpath>
+      </map>
+
+      <map topic="resource">
+        <relpath>resource</relpath>
+      </map>
+
+      <map topic="security">
+        <relpath>security</relpath>
+      </map>
+
+      <map topic="xml">
+        <relpath>xml</relpath>
+      </map>
+      
+      <!-- topic xpath is actually in xml -->
+      <map topic="xpath">
+        <reconsider>
+          <withtopic>xml</withtopic>
+        </reconsider>
+
+        <href id="index">
+          <reconsider>
+            <withhref>xpath</withhref>
+          </reconsider>
+        </href>
+
+        <href id="fun">
+          <reconsider>
+            <withhref>xpath-fun</withhref>
+          </reconsider>
+        </href>
+      </map>
+
+      <!-- topic xslt is actually in xml -->
+      <map topic="xslt">
+        <reconsider>
+            <withtopic>xml</withtopic>
+        </reconsider>
+
+        <href id="index">
+          <reconsider>
+            <withhref>xslt-fun</withhref>
+          </reconsider>
+        </href>
+
+        <href id="fun">
+          <reconsider>
+            <withhref>xslt-fun</withhref>
+          </reconsider>
+        </href>
+      </map>
+
+      <map topic="xtp">
+        <relpath>xtp</relpath>
+      </map>
+
+      <map topic="jndi">
+        <relpath>jndi</relpath>
+      </map>
+
+      <map topic="jms">
+        <relpath>jms</relpath>
+      </map>
+
+      <map topic="performance">
+        <relpath>performance</relpath>
+      </map>
+      
+    </mappings>
+  </root>
+
+  <root id="javadoc">
+    <prefix>find:javadoc</prefix>
+  </root>
+
+</href-map>

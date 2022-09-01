@@ -1,0 +1,13 @@
+http://apsd.eletros.com.br/SimuladorElet/geraSimulacaoXMLAction.do?numEletros=0056770&p2=120&p3=&p5=2600&p6=2&p7=35&p10=6&p11=6&p12=4&p13=N
+http://apsd.eletros.com.br/SimuladorElet/geraSimulacaoXMLAction.do?numEletros=0056770&p2=120&p3=&p5=2600&p6=2&p7=35&p10=6&p11=6&p12=4&p13=N&p24=2800
+
+http://localhost/SimuladorElet/geraSimulacaoXMLAction.do?p1=30/08/1978&p2=120&p3=30&p5=2600&p6=1,5&p7=35&p10=6&p11=6&p12=4&p13=N&p16=4200
+http://localhost/SimuladorElet/geraSimulacaoXMLAction.do?p1=30/08/1978&p2=120&p3=30&p5=2600&p6=1,5&p7=35&p10=6&p11=6&p12=4&p13=N&p16=4200&p24=2800
+
+http://aps.eletros.com.br/SimuladorElet/geraSimulacaoXMLAction.do?numEletros=0066803&p2=75&p3=&p5=11305&p6=0&p7=20&p10=6&p11=6&p12=4&p13=N
+http://aps.eletros.com.br/SimuladorElet/geraSimulacaoXMLAction.do?numEletros=0028886&p2=120&p5=5000&p6=1,5&p7=15&p10=6&p11=6&p12=4&p13=N
+
+//Resumo da Migração
+http://aps.eletros.com.br/SimuladorElet/geraResumoMigracaoXML.do?numEletros=0028886&p2=120&p5=5000&p6=1,5&p7=15&p10=6&p11=6&p12=4&p13=N
+
+

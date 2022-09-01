@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+    <form-beans>
+        <form-bean name="simulacaoForm" type="simuladorServlet.SimulacaoForm">
+        </form-bean>
+    </form-beans>
+    <global-forwards>
+        <forward name="erro" path="/erro.jsp"/>
+    </global-forwards>
+    <action-mappings>
+        <action path="/login" type="simuladorServlet.LoginAction">
+            <forward name="success" path="/InfoParticipanteElet.jsp"/>
+        </action>
+        <action path="/verificaTempoContrib"
+            type="simuladorServlet.VerificaTempoContribAction"
+            name="simulacaoForm" scope="request" input="/InfoParticipanteElet.jsp">
+            <forward name="successMenor" path="/rentabilidadeElet.jsp"/>
+            <forward name="successMaior" path="/rentabilidadeIdadeMaiorElet.jsp"/>
+        </action>
+        <action path="/opcaoRentabilidade"
+            type="simuladorServlet.OpcaoRentabilidadeAction">
+            <forward name="success" path="/optContribExtraordinaria.jsp"/>
+        </action>
+        <action path="/simular" type="simuladorServlet.SimularAction">
+            <forward name="success" path="/simuladorOut.jsp"/>
+        </action>
+        <action path="/MelhoreRenda" type="simuladorServlet.MelhoreRendaAction">
+            <forward name="successOpcoes" path="/MelhoreResultado.jsp"/>
+            <forward name="successOpcao" path="/MelhoreResultadoOpcao.jsp"/>
+        </action>
+        <action path="/excluiRelatorio"
+            type="simuladorServlet.ExcluiRelatorioAction">
+            <forward name="success" path="/EltSelectExcluirRelatElet.jsp"/>
+            <forward name="successOk" path="/EltSimuladorExclusaoOkElet.jsp"/>
+        </action>
+        <action path="/insereRelatorio"
+            type="simuladorServlet.InsereRelatorioAction">
+            <forward name="success" path="/EltSimuladorInclusaoOkElet.jsp"/>
+        </action>
+        <action path="/loginIntranet"
+            type="simuladorServlet.LoginIntranetAction">
+            <forward name="success" path="/acessoSimuladorIntranet.jsp"/>
+        </action>
+        <action path="/buscaRelatorios"
+            type="simuladorServlet.BuscaRelatoriosAction">
+            <forward name="success" path="/RelatoriosSalvos.jsp"/>
+        </action>
+        <action path="/destacaRelatorio"
+            type="simuladorServlet.DestacaRelatorioAction">
+            <forward name="success" path="/ResumoMigracao.jsp"/>
+        </action>
+        <action path="/simularMudancas"
+            type="simuladorServlet.SimularMudancasAction">
+            <forward name="success" path="/simuladorOut.jsp"/>
+        </action>
+        <action path="/redirect" type="simuladorServlet.RedirectAction">
+            <forward name="inicio" path="/InfoParticipanteElet.jsp"/>
+            <forward name="melhoreRenda" path="/MelhoreRenda.jsp"/>
+            <forward name="alterar" path="/AlteraSimulacao.jsp"/>
+            <forward name="parametros" path="/ParametrosUtilizados.jsp"/>
+            <forward name="detalhes" path="/RelatorioDetalhes.jsp"/>
+            <forward name="resumo" path="/ResumoMigracao.jsp"/>
+        </action>
+        <action path="/geraSimulacaoXMLAction" type="simuladorServlet.GeraSimulacaoXMLAction">
+            <forward name="success" path="/simulacaoXML.jsp"/>
+            <forward name="successNovaRenda" path="/novaRendaXML.jsp"/>
+        </action>
+        <action path="/geraResumoMigracaoXML" type="simuladorServlet.GeraResumoMigracaoXMLAction">
+            <forward name="success" path="/resumoMigracaoXML.jsp"/>
+        </action>    
+    </action-mappings>
+    <message-resources parameter="simuladorElet.ApplicationResources"/>
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,
+                                                  /WEB-INF/validation.xml"/>
+    </plug-in>
+</struts-config>

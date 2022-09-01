@@ -1,0 +1,96 @@
+body {
+	font: normal 11px Verdana;
+	color: #003366;
+}
+.bkgBarraLogin {
+	background: #DCE5ED url('../Img/bkgBarraLogin.gif') repeat-y right;
+}
+
+.txtBarraLogin {
+	font: normal 10px Verdana;
+	color: #003366;	
+}
+.inpLogin {
+	border: 1px solid #003366;
+	background-color: #FFFFFF;
+	font: normal 11px Verdana;
+	color: #003366;
+}
+
+a.titNoticias, a.titNoticias:link, a.titNoticias:hover, a.titNoticias:visited {
+	font: bold 11px Verdana;
+	color: #003366;
+	text-decoration: none;
+}
+
+.txtNoticias {
+	font: normal 10px Verdana;
+	color: #003366;
+	text-decoration: none;
+}
+
+a.titOqueHa, a.titOqueHa:link, a.titOqueHa:hover, a.titOqueHa:visited {
+	font: bold 11px Verdana;
+	color: #003366;
+	text-decoration: none;
+}
+
+.txtOqueHa {
+	font: normal 11px Verdana;
+	color: #003366;
+	text-decoration: none;
+}
+/* menu esquerdo*/
+.bkgLatEsquerda {
+	background-color: #185A94;
+}
+.inpBusca {
+	border: 1px solid #003366;
+	background-color: #BED0E1;
+	font: normal 11px Verdana;
+	color: #003366;
+}
+
+.bkgMnuFechado{
+	background-color: #185A94;
+}
+.bkgMnuAberto{
+	background-color: #003366;
+}
+.bkgMnuSubAberto{
+	background-color: #C1D2E2;
+	border-bottom: 2px solid #003366;
+	border-left: 2px solid #003366;
+	border-right: 2px solid #003366;
+}
+
+.txtDesenv {
+	font: normal 9px Verdana;
+	color: #FFFFFF;
+}
+a.lnkDesenv, a.lnkDesenv:link, a.lnkDesenv:hover, a.lnkDesenv:visited {
+	font: bold 9px Verdana;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/* Lataral direita */
+.bkgSupBox {
+	background-position: top;
+	background-repeat: no-repeat;
+}
+.bkgInfBox {
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+
+.txtBoxDir {
+	font: normal 10px Verdana;
+	color: #003366;
+}
+/* Rodape */
+.rodape {
+	background-color: #003366;
+	font: normal 10px Verdana;
+	color: #FFFFFF;
+}
+

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE form-validation PUBLIC
+          "-//Apache Software Foundation//DTD Commons Validator Rules Configuration 1.0//EN"
+          "http://jakarta.apache.org/commons/dtds/validator_1_0.dtd">
+
+<form-validation>
+
+<!--
+     This is a minimal Validator form file with a couple of examples.
+-->
+
+    <global>
+
+        <!-- An example global constant
+        <constant>
+            <constant-name>postalCode</constant-name>
+            <constant-value>^\d{5}\d*$</constant-value>
+        </constant>
+        end example-->
+
+    </global>
+
+    <formset>
+          <form name="simulacaoForm">
+               <field property="dataNasc"
+                         depends="required,date">
+                  <arg0 key="simulacaoForm.dataNasc"/>
+                  <var>
+                      <var-name>datePatternStrict</var-name>
+                      <var-value>dd/MM/yyyy</var-value>
+                  </var>
+               </field>
+               <field property="IAposentado"
+                         depends="required,integer,intRange">
+                  <arg0 key="simulacaoForm.IAposentado"/>
+                  <arg1 name="intRange" key="${var:min}" resource="false"/>
+                  <var>
+                    <var-name>min</var-name>
+                    <var-value>75</var-value>
+                  </var>
+               </field>
+               <field property="idadeDep"
+                         depends="required,integer">
+                  <arg0 key="simulacaoForm.idadeDep"/>
+               </field>
+               <field property="INumSalAtual" 
+                         depends="required,double">
+                  <arg0 key="simulacaoForm.INumSalAtual"/>
+               </field>
+               <field property="INumCrescSalarial"
+                         depends="required,double">
+                  <arg0 key="simulacaoForm.INumCrescSalarial"/>
+               </field>
+               <field property="Rest1"
+                         depends="integer">
+                  <arg0 key="simulacaoForm.Rest1"/>
+               </field>
+               <field property="AnoRest2"
+                         depends="integer">
+                  <arg0 key="simulacaoForm.AnoRest2"/>
+               </field>
+               <field property="DataRest"
+                         depends="date">
+                  <arg0 key="simulacaoForm.DataRest"/>
+                  <var>
+                      <var-name>datePatternStrict</var-name>
+                      <var-value>dd/MM/yyyy</var-value>
+                  </var>
+               </field>
+          </form>
+          
+     </formset>
+<!--
+               depends="required,integer,intRange">
+    <arg0 key="typeForm.integer.displayname"/>
+    <arg1
+        name="intRange"
+        key="${var:min}"
+        resource="false"/>
+    <arg2
+        name="intRange"
+        key="${var:max}"
+        resource="false"/>
+    <var>
+        <var-name>min</var-name>
+        <var-value>10</var-value>
+    </var>
+    <var>
+        <var-name>max</var-name>
+        <var-value>20</var-value>
+    </var>     -->
+</form-validation>

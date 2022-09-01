@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+
+
+
+
+
+
+
+
+
+<simulacao>
+    <erro>
+        null
+    </erro>
+    <participante>
+        <idadeBenef>
+            <meses>
+                2 
+            </meses>
+            <anos>
+                65 
+            </anos>
+        </idadeBenef>
+        <salarioBenef>
+            R$ 4.313,39
+        </salarioBenef>
+        <contribFinal>
+            R$ 371,33
+        </contribFinal>
+    </participante>   
+    <saldoContribObrigatorias>
+        R$ 436.063,22
+    </saldoContribObrigatorias>
+    <saldoContribOpcionais>
+        R$ 31.161,44
+    </saldoContribOpcionais>
+    <saldoInicialProjetado>
+        R$ 0,00
+    </saldoInicialProjetado>
+    <saldoTotal>
+        R$ 467.224,65
+    </saldoTotal>
+    <rendaVitalicia>
+        R$ 2.201,26
+    </rendaVitalicia>
+    <!--percentual da reserva acumulada para gerar a renda vitalícia -->
+    <percentRendaVitalicia>
+        1.9604071043431754   
+    </percentRendaVitalicia>
+    <rendaProgramada>
+        R$ 2.245,28
+    </rendaProgramada>
+    <!-- periodo q o participante vai receber o benefício -->
+    <periodoBenfEletros>
+        
+        <anos>
+            54
+        </anos>
+        <meses>
+            10
+        </meses>
+    </periodoBenfEletros>
+</simulacao>
+

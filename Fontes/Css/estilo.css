@@ -1,0 +1,81 @@
+.textocinza {
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+	text-align: justify;
+}
+.textobranco {
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+}
+.rodape {
+	font-family: Verdana, Geneva, Arial, helvetica, sans-serif;
+	font-size: 9px;
+}
+.titulo1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bolder;
+	color: #8B7B43;
+	text-align: left;
+}
+.titulo2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: bold;
+	color: #333333;
+}
+.textotabela {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.textotitulo
+{
+  	font-family: Verdana, Arial, Helvetica, sans-serif;
+  		font-size: 12px;
+  		font-style: normal;
+  		font-weight: bold;
+  	color: #8B7B43;
+}
+.link{
+  	font-family: Verdana, Arial, Helvetica, sans-serif;
+  		font-size: 12px;
+  		font-style: normal;
+  		font-weight: bold;
+  	color: #8B7B43;
+      	
+
+}
+.textoAberto{
+  	font-family: Verdana, Arial, Helvetica, sans-serif;
+  		font-size: 11px;
+  		font-style: normal;
+  		font-weight: bold;
+  	color: #66cc99;
+}
+.linkAberto{
+  	font-family: Verdana, Arial, Helvetica, sans-serif;
+  		font-size: 11px;
+  		font-style: normal;
+  		font-weight: bold;
+  	color: #66cc99;
+      	
+}
+a {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.upperCase {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	text-transform: uppercase;
+	color: #000000;
+}
